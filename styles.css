@@ -1,0 +1,36 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+}
+.active {
+    color: var(--light-blue);
+}
+.font-bold {
+    font-weight: bold;
+}
+.p-dark {
+    color: var(--dark) !important;
+    font-weight: 500;
+}
+.mt-2 {
+    margin-top: .82em;
+}
+.img-icon {
+    width: 50px; aspect-ratio: 1;
+}
+.fs-1 {
+    font-size: .81rem !important;
+}
+.list-styled li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.list-styled {
+    list-style: circle !important;
+    margin: 0 1.25em !important;
+    padding: 0 !important; 
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
