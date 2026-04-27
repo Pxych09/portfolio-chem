@@ -1,3 +1,7 @@
+/* test for layout */
+*.border-red {
+    border: 1px solid red;
+}
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,8 @@
 }
 .fs-1 {
     font-size: .81rem !important;
+}.fs-2 {
+    font-size: .91rem !important;
 }
 .list-styled li {
     margin: 0 !important;
@@ -33,4 +39,49 @@
     display: flex;
     flex-direction: column;
     gap: .5em;
+}
+.text-justify {
+    text-align: justify !important;
+}
+
+.pill {
+    width: fit-content;
+    padding: .45em 1em;
+    border-radius: .75em;
+    outline: 1px solid var(--dark);
+}
+/*  --bg-warm: #FF3800;
+    --bg-sun: #FFBF00;
+    --bg-lava: #7C0902;
+    --bg-tropical: #00FFBF;
+    --bg-forest: #568203; 
+    --bg-amber: #FFBF00;
+    --bg-amethyst: #B284BE;
+    --bg-mist: #007BA7;
+*/
+
+.pill-blue {
+    background-color: var(--light-blue);
+}.pill-dark {
+    background-color: var(--dark);
+}.pill-sun {
+    background-color: var(--bg-sun);
+    color: var(--dark);
+}.pill-warm {
+    background-color: var(--bg-warm);
+}.pill-lava {
+    background-color: var(--bg-lava);
+    color: var(--bg-white);
+}.pill-tropical {
+    background-color: var(--bg-tropical);
+}.pill-forest {
+    background-color: var(--bg-forest);
+}.pill-amber {
+    background-color: var(--bg-amber);
+}.pill-amethyst {
+    background-color: var(--bg-amethyst);
+}.pill-emerald {
+    background-color: var(--bg-emerald);
+}.pill-mist {
+    background-color: var(--bg-mist);
 }
