@@ -16,6 +16,7 @@
         <ul>
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#profile">Profile</a></li>
         </ul>
     </nav>
@@ -23,18 +24,107 @@
     <section id="home">
         <div>
             <div>Welcome to My Portfolio</div>
-            <div><button id="explore">Explore</button></div>
+            <div><a href="#explore">Explore</a></div>
         </div>
     </section>
-    <section id="about">
+
+<section id="about">
+    <div>
+        <div class="font-bold">About Me</div>
+        <div class="font-bold about-settings">
+            <select name="about-select" class="textAlign">
+                <option disabled selected>Set Text Align</option>
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </select>
+            <button class="toggleBtn">Hide</button>
+        </div>
         <div>
-            <div>This is about page.</div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus dolore eveniet libero facere dolores accusamus veritatis nesciunt ratione in. Nesciunt inventore eius a tenetur officiis enim, illo quas quaerat.</p>
-                <p>More detailed background, education, and career goals.</p>
-            </div>
+            <p class="about-content">Detail-oriented and organized, with a background in analytical thinking and communication.
+                Willing to learn and adapt to new systems and procedures, and motivated to grow while
+                developing critical thinking skills in an IT Specialist (Support & Development) role.
+            </p>
         </div>
+    </div>
+    <div>
+        <div class="font-bold">About The Portfolio</div>
+        <div class="font-bold about-settings">
+            <select name="about-select" class="textAlign">
+                <option disabled selected>Set Text Align</option>
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </select>
+            <button class="toggleBtn">Hide</button>
+        </div>
+        <div>
+            <p class="about-content">This portfolio was built using pure HTML, CSS, and JavaScript, showcasing a strong foundation in core web development without relying on external frameworks or libraries. The structure is crafted with semantic HTML to ensure accessibility and clarity, while CSS is used to create a clean, responsive design that adapts seamlessly across different screen sizes. Interactive elements and dynamic behaviors are powered by vanilla JavaScript, demonstrating an understanding of DOM manipulation and event handling. Overall, the project highlights the ability to develop a fully functional and visually appealing website from scratch using only the fundamental technologies of the web.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h1>Gallery</h1>
+    <div class="gallery-img">
+            <figure>
+                <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
+                <!-- <iframe src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" width="100%" height="500px"></iframe> -->
+                <img src="./imgs/png-jpg/Web Fundamental - Escribano, Chemuel E.jpg" alt="Web Development (Programming Hero)" loading="lazy">
+                <figcaption>
+                    <h4>Web Development (Programming Hero)</h4>
+                    <p>Taken 13 Nov 2023</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
+                    <!-- <iframe src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" width="100%" height="500px"></iframe> -->
+                    <img src="./imgs/png-jpg/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf.png" alt="Web Development" loading="lazy">
+                    <figcaption>
+                        <h4>Web Development</h4>
+                    <p>Issued 21 Dec 2023</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
+                <!-- <iframe src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" width="100%" height="500px"></iframe> -->
+                <img src="./imgs/png-jpg/Introduction to HTML - Escribano, Chemuel E.pdf.png" alt="Introduction to HTML" loading="lazy">
+                <figcaption>
+                    <h4>Introduction to HTML</h4>
+                    <p>Issued 25 Oct 2023</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
+                <!-- <iframe src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" width="100%" height="500px"></iframe> -->
+                <img src="./imgs/png-jpg/Introduction to CSS - Escribano, Chemuel E.pdf.png" alt="Introduction to CSS" loading="lazy">
+                <figcaption>
+                    <h4>Introduction to CSS</h4>
+                    <p>Issued 10 Sep 2023</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
+                <!-- <iframe src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" width="100%" height="500px"></iframe> -->
+                <img src="./imgs/png-jpg/Introduction to JavaScript - Escribano, Chemuel E.pdf.png" alt="Introduction to JavaScript" loading="lazy">
+                <figcaption>
+                    <h4>Introduction to JavaScript</h4>
+                    <p>Issued 3 Sep 2023</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
+                <!-- <iframe src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" width="100%" height="500px"></iframe> -->
+                <img src="./imgs/png-jpg/Game Development with JS - Escribano, Chemuel E.pdf.png" alt="Game Development with JS" loading="lazy">
+                <figcaption>
+                    <h4>Game Development with JS</h4>
+                    <p>Issued 1 Sep 2023</p>
+                </figcaption>
+            </figure>
+    </div>
     </section>
+    
     <section id="profile">
         <div>
             <div class="profile-img-header">
@@ -55,6 +145,7 @@
                 <div><span>Marital Status</span><span class="font-bold">Single</span></div>
                 <div><span>Nationality</span><span class="font-bold">Filipino</span></div>
                 
+                <br>
                 <p class="p-dark">Contact Information <hr></p>
                 <div><span>Email</span><span class="font-bold">mock_email@gmail.com</span></div>
                 <div><span>Contact #</span><span class="font-bold">+63 123 4567 890</span></div>
@@ -125,8 +216,48 @@
                 </ul>
             </div>
         </div>
-
     </section>
+
+    <section id="explore" class="explore-section">
+        <h1>Explore: </h1>
+        <h6 class="fs-2">view the custom web made by Chem</h6>
+        <div class="explore-content" id="exploreContent">
+            <!-- JS -->
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-backdrop" id="modalBackdrop">
+        <div class="modal">
+        <div class="modal-header">
+            <p class="modal-title" id="modalTitle">Skool Web</p>
+            <button class="modal-close" id="modalClose" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <line x1="4" y1="4" x2="12" y2="12"/>
+                <line x1="12" y1="4" x2="4" y2="12"/>
+            </svg>
+            </button>
+        </div>
+        <div class="modal-preview">
+            <div class="preview-thumb">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+            </svg>
+            </div>
+            <p class="preview-label" id="modalPreviewLabel">Preview not available</p>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-meta" id="modalMeta">Custom web project</span>
+            <button class="visit-btn" id="visitBtn">
+            Visit site
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 13L13 3M7 3h6v6"/>
+            </svg>
+            </button>
+        </div>
+        </div>
+    </div>
     
 </body>
 </html>
