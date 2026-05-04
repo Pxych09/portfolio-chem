@@ -79,10 +79,68 @@
             </p>
         </div>
     </div>
+    <div>
+        <div class="font-bold"><h4>About "Gallery" Section</h4></div>
+        <div class="font-bold about-settings">
+            <select name="about-select" class="textAlign">
+                <option disabled selected>Set Text Align</option>
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </select>
+            <button class="toggleBtn">Hide</button>
+        </div>
+        <div>
+            <p class="about-content">Given there are preview images of certificates earned through the SoloLearn mobile application, a platform that offers a variety of programming and technology courses. Each certificate is awarded upon successful completion of a chosen course, including its lessons, quizzes, and assessments. These certifications reflect my initiative to learn independently and gain foundational knowledge across different areas, contributing to my overall exposure and continuous skill development.
+            </p>
+        </div>
+    </div>
+    <div>
+        <div class="font-bold"><h4>About "Profile" Section</h4></div>
+        <div class="font-bold about-settings">
+            <select name="about-select" class="textAlign">
+                <option disabled selected>Set Text Align</option>
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </select>
+            <button class="toggleBtn">Hide</button>
+        </div>
+        <div>
+            <p class="about-content">This information is not guaranteed to be 100% accurate or factual, as it is intended solely for web testing and preview purposes. The content is used to demonstrate and showcase the implementation of HTML and CSS in building and designing web pages.
+            </p>
+        </div>
+    </div>
+    <div>
+        <div class="font-bold"><h4>About "Explore" Section</h4></div>
+        <div class="font-bold about-settings">
+            <select name="about-select" class="textAlign">
+                <option disabled selected>Set Text Align</option>
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </select>
+            <button class="toggleBtn">Hide</button>
+        </div>
+        <div>
+            <p class="about-content">This section features embedded iframe previews of web pages I developed for practice in website building. Each preview includes links that allow direct access to the respective pages. Some of these projects are privately developed and may require credentials to view, while others are publicly accessible and open for anyone to explore. This section showcases my hands-on experience in creating and testing different web layouts and functionalities.
+            </p>
+        </div>
+    </div>
 </section>
 
 <section id="gallery">
     <h1>Gallery</h1>
+    <p>
+    <span>These are preview images of certificates...</span>
+    <a class="a-link" href="#" 
+       onclick="toggleText(event, 
+           'These are preview images of certificates...', 
+           'These are preview images of certificates earned through the SoloLearn mobile application, a platform that offers a variety of programming and technology courses. Each certificate is awarded upon successful completion of a chosen course, including its lessons, quizzes, and assessments. These certifications reflect my initiative to learn independently and gain foundational knowledge across different areas, contributing to my overall exposure and continuous skill development.'
+       )"> See more.</a>
+    </p>
+    <br><hr>
+
     <div class="gallery-img">
             <figure>
                 <!-- <embed src="./imgs/ed1cdf2e-2f02-44ce-878d-ec5119daf29d.pdf" alt="" type="application/pdf"> -->
@@ -186,13 +244,13 @@
             <div class="profile-personal education">
                 <div class="flex-column">
                     <span class="font-bold">Information Technology</span>
-                    <span>Novaliches, Quezon City | ****</span>
-                    <span>Quezon City University (QCU)</span>
+                    <span>N*********, Quezon City | ****</span>
+                    <span>*ue*** **** University (***)</span>
                 </div>
                 <div class="flex-column mt-2">
                     <span class="font-bold">Technical Vocational - Information Technology</span>
-                    <span>Greater Fairview, Quezon City | ****</span>
-                    <span>Datamex College of Saint Adeline (DCSA)</span>
+                    <span>G****** Fa******, ***** City | ****</span>
+                    <span>*at**** College of **** A***** (****)</span>
                 </div>
             </div>
         </div>
@@ -255,7 +313,7 @@
 
     <!-- Modal -->
     <div class="modal-backdrop" id="modalBackdrop">
-        <div class="modal">
+        <div class="modal resize">
         <div class="modal-header">
             <p class="modal-title" id="modalTitle">Skool Web</p>
             <button class="modal-close" id="modalClose" aria-label="Close">
@@ -266,13 +324,23 @@
             </button>
         </div>
         <div class="modal-preview">
-            <div class="preview-thumb">
+        <iframe
+        id="modalIframe"
+        src=""
+        frameborder="0"
+        loading="lazy"
+        allowfullscreen
+        allow="unload"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+        ></iframe>
+        <!-- Fallback shown when iframe can't load -->
+        <div class="preview-fallback" id="previewFallback" style="display:none;">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="14" rx="2"/>
-                <path d="M8 21h8M12 17v4"/>
+            <rect x="3" y="3" width="18" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
             </svg>
-            </div>
             <p class="preview-label" id="modalPreviewLabel">Preview not available</p>
+        </div>
         </div>
         <div class="modal-footer">
             <span class="modal-meta" id="modalMeta">Custom web project</span>
