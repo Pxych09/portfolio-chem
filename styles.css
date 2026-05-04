@@ -85,3 +85,15 @@
 }.pill-mist {
     background-color: var(--bg-mist);
 }
+
+.a-link {
+    color: #2980b9;
+}
+
+.resize {
+  resize: both;    /* Allows both horizontal and vertical resizing */
+  overflow: auto;  /* Required for the resize handle to appear */
+  width: 200px;    /* Optional: initial width */
+  height: auto;   /* Optional: initial height */
+  border: 1px solid black;
+}
