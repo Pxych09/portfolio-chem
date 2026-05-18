@@ -24,7 +24,7 @@
     --bg-emerald: #3FFF00;
     --bg-mist: #007BA7;
 }
-
+/* initial */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0; padding: 0;
